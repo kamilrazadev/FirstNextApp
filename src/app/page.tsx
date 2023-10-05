@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default async function Home() {
   const todos = await prisma.todo.findMany()
-  await prisma.todo.create({ data: { title: "test", complete: false } })
+  // await prisma.todo.create({ data: { title: "test", complete: false } })
 
   return <>
     
